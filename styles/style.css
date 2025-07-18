@@ -190,7 +190,7 @@ main section{
 .section-title{
     text-align: center;
     margin-top: 130px;
-    margin-bottom: 113px;
+    /* margin-bottom: 113px; */
 }
 
 /* footer styles */
@@ -217,11 +217,48 @@ footer input[type="text"], footer textarea {
 
 /* icon style */   
 .icons{
-    margin-top: 300px;
-    margin-left:800px;
+    /* margin-top: 300px; */
+    /* margin-left:800px; */
     display: flex;
     gap: 30px;
-    justify-content: right;
+    /* justify-content: right; */
     /* flex-direction:column; */
     
+}
+
+/* responsive area code  */
+
+@media screen and (max-width: 576px) {
+    .skills-container, .resume-container, footer {
+        flex-direction: column;
+    }
+    footer{
+        padding: 20px;
+    }
+    .footer-column{
+        width: 100%;
+    }
+    
+    footer input[type="text"], footer input[type="email"], footer textarea{
+        width: calc(100% - 40px);
+    }
+}
+
+
+/* for pixel 6 7 */
+
+@media screen and (max-width: 412px) {
+    .skills-container, .resume-container, footer {
+        flex-direction: column;
+    }
+    footer{
+        padding: 20px;
+    }
+    .footer-column{
+        width: 100%;
+    }
+    
+    footer input[type="text"], footer input[type="email"], footer textarea{
+        width: calc(100% - 40px);
+    }
 }
