@@ -229,10 +229,31 @@ footer input[type="text"], footer textarea {
 /* responsive area code  */
 
 @media screen and (max-width: 576px) {
-    .skills-container, .resume-container, footer {
+    .skills-container, .resume-container, footer, .about-items, .banner, nav, nav > ul {
         flex-direction: column;
     }
-    footer{
+
+    nav > ul {
+        gap: 20px;
+    }
+
+    .btn-primary{
+        margin-bottom: 20px;
+    }
+
+    .banner{
+        margin: 20px;
+    }
+
+    .header{
+        background-image: none;
+    }
+
+    .banner-pic{
+        width: 100%;
+    }
+
+    footer, .about{
         padding: 20px;
     }
     .footer-column{
@@ -248,10 +269,31 @@ footer input[type="text"], footer textarea {
 /* for pixel 6 7 */
 
 @media screen and (max-width: 412px) {
-    .skills-container, .resume-container, footer {
+    .skills-container, .resume-container, footer, .about-items, .banner, nav, nav > ul {
         flex-direction: column;
     }
-    footer{
+
+    nav > ul {
+        gap: 20px;
+    }
+
+    .btn-primary{
+        margin-bottom: 20px;
+    }
+
+    .banner{
+        margin: 20px;
+    }
+
+    .header{
+        background-image: none;
+    }
+
+    .banner-pic{
+        width: 100%;
+    }
+
+    footer, .about{
         padding: 20px;
     }
     .footer-column{
